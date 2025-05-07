@@ -4,8 +4,8 @@ This repository contains the source code for our **Java + DSA** mini project: a 
 
 ## ⚙️ Features
 
-- 📝 Add, update, or delete documents  
-- 🧠 Lazy search with keyword suggestions (prefix-based)  
+- 📝 Add your own file, or search from the existing database. 
+- 🧠 Lazy search with keyword suggestions (prefix-based) .
 
 ## 🧩 Data Structures Used
 
