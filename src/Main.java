@@ -8,7 +8,8 @@ public class Main {
         DocumentManager docManager = new DocumentManager(searchEngine);
 
         String folderPath;
-
+        System.out.println("\tWelcome to QuickFind! Your own Mini Search Engine !!");
+        
         // Ask user for folder path
         System.out.print("Do you want to use the default database? (Y/N): ");
         String choice = scanner.nextLine().trim().toLowerCase();
@@ -27,6 +28,7 @@ public class Main {
             System.out.println("Documents loaded and indexed successfully.");
         } catch (Exception e) {
             System.err.println("Error loading documents: " + e.getMessage());
+            scanner.close();
             return;
         }
 
@@ -122,7 +124,6 @@ public class Main {
                 System.out.println("Invalid command. Please try again.");
             }
         }
-
         scanner.close();
     }
 }

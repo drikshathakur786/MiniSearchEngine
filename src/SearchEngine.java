@@ -1,11 +1,9 @@
 import java.util.*;
-import java.io.*;
 import java.nio.file.Path;
 
 public class SearchEngine {
     private Map<String, Map<String, List<Integer>>> index; // Maps word -> document -> list of line numbers
-    private Map<String, Map<String, List<String>>> fullLines; // Maps word -> document -> full lines where the word
-                                                              // appears
+    private Map<String, Map<String, List<String>>> fullLines; // Maps word -> document -> full lines where the word appears
     private Trie trie;
 
     public SearchEngine() {
@@ -14,8 +12,7 @@ public class SearchEngine {
         trie = new Trie();
     }
 
-    // Index a document and its content, also keeping track of line numbers and full
-    // lines
+    // Index a document and its content, also keeping track of line numbers and full lines , called by docManager
     public void indexDocument(String documentName, String content, Path filePath) {
         String[] lines = content.split("\n");
 
