@@ -136,5 +136,3 @@ Suggestions:
 * 📦 Export results to a file
 
 ---
-
-Let me know if you want me to actually generate this into a `README.md` file for download, or add badges, license, or GIF demo too!
