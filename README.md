@@ -93,26 +93,60 @@ java Main
 > Here's what a typical run might look like:
 
 ```text
-Welcome to Mini Search Engine 🚀
+   Welcome to QuickFind! Your own Mini Search Engine !!
+Do you want to use the default database? (Y/N): Y
+Using default path: ../documents
+Documents loaded and indexed successfully.
 
-1. Load Documents
-2. Search by Keyword
-3. Lazy Search (Auto-Suggest)
-4. Exit
+Enter command (search <word> / suggest <prefix> / exit): suggest li
 
-Enter choice: 1
-> Documents loaded and indexed successfully!
+Suggestions for prefix 'li':
+- library
 
-Enter choice: 2
-> Enter keyword to search: algorithm
-Found in: document1.txt, notes.txt
 
-Enter choice: 3
-> Enter prefix to suggest: alg
-Suggestions:
-- algorithm
-- algebra
-- algo-trading
+Suggestions written to suggestions.txt
+
+Enter command (search <word> / suggest <prefix> / exit): suggest l 
+Suggestions for prefix 'l':
+- latency
+- lazy
+- lead
+- leads
+- level
+- library
+- loop
+
+
+Suggestions written to suggestions.txt
+
+Enter command (search <word> / suggest <prefix> / exit): search li
+Choose search mode (lazy/strict): lazy
+
+Found 'li' in word 'applications' in sample.txt at line 99754:     
+99754 : Hybrid applications combine the strengths of web and native apps.
+Found 'li' in word 'applications' in sample.txt at line 99811:     
+99811 : Hybrid applications combine the strengths of web and native apps.
+Found 'li' in word 'applications' in sample.txt at line 99825:     
+99825 : Hybrid applications combine the strengths of web and native apps.
+Found 'li' in word 'applications' in sample.txt at line 99860:     
+99860 : Frameworks provide reusable skeletons for building robust applications.
+Found 'li' in word 'applications' in sample.txt at line 99866:     
+99866 : Frameworks provide reusable skeletons for building robust applications.
+Found 'li' in word 'applications' in sample.txt at line 99894:     
+99894 : Frameworks provide reusable skeletons for building robust applications.
+Found 'li' in word 'applications' in sample.txt at line 99910:     
+99910 : Frameworks provide reusable skeletons for building robust applications.
+Found 'li' in word 'applications' in sample.txt at line 99931:     
+99931 : Frameworks provide reusable skeletons for building robust applications.
+Found 'li' in word 'applications' in sample.txt at line 99958:     
+99958 : Frameworks provide reusable skeletons for building robust applications.
+Found 'li' in word 'applications' in sample.txt at line 99967:     
+99967 : Hybrid applications combine the strengths of web and native apps.
+
+Results written to output.txt
+
+Enter command (search <word> / suggest <prefix> / exit): exit
+Exiting Mini Search Engine. Goodbye!
 ```
 
 ---
